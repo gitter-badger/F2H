@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E905F93F18BA38A50058B8CE /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = E905F93E18BA38A50058B8CE /* Hardware.m */; };
+		E905F94218BA40A70058B8CE /* Firmware.m in Sources */ = {isa = PBXBuildFile; fileRef = E905F94118BA40A70058B8CE /* Firmware.m */; };
 		E9A9D5FE18B9165D004CD2F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9D5FD18B9165D004CD2F9 /* Cocoa.framework */; };
 		E9A9D60818B9165D004CD2F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9A9D60618B9165D004CD2F9 /* InfoPlist.strings */; };
 		E9A9D60A18B9165D004CD2F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9D60918B9165D004CD2F9 /* main.m */; };
@@ -31,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E905F93D18BA38A50058B8CE /* Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hardware.h; sourceTree = "<group>"; };
+		E905F93E18BA38A50058B8CE /* Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hardware.m; sourceTree = "<group>"; };
+		E905F94018BA40A70058B8CE /* Firmware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firmware.h; sourceTree = "<group>"; };
+		E905F94118BA40A70058B8CE /* Firmware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Firmware.m; sourceTree = "<group>"; };
 		E9A9D5FA18B9165D004CD2F9 /* firmware2hardware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firmware2hardware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A9D5FD18B9165D004CD2F9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E9A9D60018B9165D004CD2F9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -115,6 +121,10 @@
 		E9A9D60318B9165D004CD2F9 /* firmware2hardware */ = {
 			isa = PBXGroup;
 			children = (
+				E905F93D18BA38A50058B8CE /* Hardware.h */,
+				E905F93E18BA38A50058B8CE /* Hardware.m */,
+				E905F94018BA40A70058B8CE /* Firmware.h */,
+				E905F94118BA40A70058B8CE /* Firmware.m */,
 				E9A9D60F18B9165D004CD2F9 /* AppDelegate.h */,
 				E9A9D61018B9165D004CD2F9 /* AppDelegate.m */,
 				E9A9D61218B9165D004CD2F9 /* MainMenu.xib */,
@@ -252,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E905F93F18BA38A50058B8CE /* Hardware.m in Sources */,
 				E9A9D61118B9165D004CD2F9 /* AppDelegate.m in Sources */,
+				E905F94218BA40A70058B8CE /* Firmware.m in Sources */,
 				E9A9D60A18B9165D004CD2F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +476,7 @@
 				E9A9D62D18B9165D004CD2F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9A9D62E18B9165D004CD2F9 /* Build configuration list for PBXNativeTarget "firmware2hardwareTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +485,7 @@
 				E9A9D63018B9165D004CD2F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
