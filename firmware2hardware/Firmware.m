@@ -10,4 +10,18 @@
 
 @implementation Firmware
 
+- (id)init {
+
+    if (self = [super init]) {
+
+        self.fv = @"N/A";
+        self.hv = @"N/A";
+        self.compilationDate = @"N/A";
+        self.developer = @"N/A";
+
+    }
+
+    return self;
+}
+
 @end

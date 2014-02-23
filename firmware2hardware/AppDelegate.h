@@ -8,11 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Hardware.h"
+#import "Firmware.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 
 @property (strong) NSMutableArray* allHardware;
+@property (strong) NSMutableArray* theFirmware;
 
 @end
