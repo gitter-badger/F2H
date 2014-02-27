@@ -15,4 +15,6 @@
 @property (strong) NSString* developer;
 @property (strong) NSString* compilationDate;
 
+- (void)update;
+
 @end

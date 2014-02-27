@@ -28,14 +28,8 @@
 
         [self.allHardware insertObject:firstHardware atIndex:[self.allHardware count]];
 
-        Firmware* firstFirmware = [[Firmware alloc] init];
-
-        [firstFirmware setFv:@"1.01.1"];
-        [firstFirmware setHv:@"1.5"];
-        [firstFirmware setDeveloper:@"YES"];
-        [firstFirmware setCompilationDate:@"05.10.2045 18:23"];
-        
-        [self.theFirmware insertObject:firstFirmware atIndex:[self.theFirmware count]];
+        firmware = [[Firmware alloc] init];
+        [self.theFirmware insertObject:firmware atIndex:[self.theFirmware count]];
 
     }
 
@@ -47,4 +41,38 @@
 
 }
 
+- (IBAction)preferences:(id)sender {
+
+    preferencesController = [[PreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindowController"];
+
+    [preferencesController showWindow:nil];
+
+}
+
+- (IBAction)selectFile:(id)sender {
+
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+
+    // Setting parameter for the selecting window.
+    [panel setAllowsMultipleSelection:NO];
+    [panel setCanChooseDirectories:NO];
+    [panel setCanChooseFiles:YES];
+    [panel setAllowedFileTypes:[NSArray arrayWithObject:@"f2h"]];
+
+    [panel beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
+
+        // If Esc or Cancel, don't do nothing
+        if(result != NSFileHandlingPanelOKButton) {
+
+            [firmware update];
+            return;
+
+        }
+
+        // Retriving the path of the selected file
+        //firwareFile = [[Firmware alloc] initWithData:[[panel URLs]objectAtIndex:0]];
+        
+    }];
+
+}
 @end

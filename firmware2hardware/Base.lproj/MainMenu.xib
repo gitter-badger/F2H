@@ -25,7 +25,11 @@
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Preferences…" keyEquivalent="," id="129"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="preferences:" target="494" id="4O5-I3-Hch"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="143">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -94,10 +98,13 @@
                             <constraint firstAttribute="width" constant="106" id="X1Q-5B-7bi"/>
                             <constraint firstAttribute="height" constant="68" id="v9U-na-Nq7"/>
                         </constraints>
-                        <buttonCell key="cell" type="smallSquare" title="Chouse File" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NMt-Tc-S20">
+                        <buttonCell key="cell" type="smallSquare" title="Select File" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NMt-Tc-S20">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="selectFile:" target="494" id="HoG-Jt-19M"/>
+                        </connections>
                     </button>
                     <box autoresizesSubviews="NO" title="Firmware header" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-wV-L8m">
                         <rect key="frame" x="153" y="389" width="462" height="72"/>

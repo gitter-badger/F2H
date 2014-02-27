@@ -24,4 +24,13 @@
     return self;
 }
 
+- (void)update {
+
+    self.fv = @"1.04.1";
+    self.hv = @"1.0";
+    self.compilationDate = @"10.12.2014 18:00";
+    self.developer = @"YES";
+
+}
+
 @end
